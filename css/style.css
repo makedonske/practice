@@ -371,30 +371,42 @@ textarea {
 
 Шрифты супер тонкий */
 @font-face {
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 200;
-    src: local(''),
-         url('../fonts/oswald-v48-latin_cyrillic-ext_cyrillic-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/oswald-v48-latin_cyrillic-ext_cyrillic-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* Тонкий */
-  @font-face {
-    font-family: 'Oswald';
+    font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 300;
+    src: url('../fonts/comfortaa-v38-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('../fonts/oswald-v48-latin_cyrillic-ext_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/oswald-v48-latin_cyrillic-ext_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/comfortaa-v38-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/comfortaa-v38-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/comfortaa-v38-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/comfortaa-v38-latin_cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/comfortaa-v38-latin_cyrillic-300.svg#Comfortaa') format('svg'); /* Legacy iOS */
   }
-  /* И обычный */
+  /* Просто тонкий */
   @font-face {
-    font-family: 'Oswald';
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/comfortaa-v38-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/comfortaa-v38-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/comfortaa-v38-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/comfortaa-v38-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/comfortaa-v38-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/comfortaa-v38-latin_cyrillic-500.svg#Comfortaa') format('svg'); /* Legacy iOS */
+  }
+  /* обычный */
+  @font-face {
+    font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 400;
+    src: url('../fonts/comfortaa-v38-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('../fonts/oswald-v48-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/oswald-v48-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/comfortaa-v38-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/comfortaa-v38-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/comfortaa-v38-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/comfortaa-v38-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/comfortaa-v38-latin_cyrillic-regular.svg#Comfortaa') format('svg'); /* Legacy iOS */
   }
 
 html{
@@ -419,7 +431,7 @@ html{
 .header_logo{
     position: absolute;
     left: 50%;
-    height: 6em;
+    height: 10em;
 }
 
 .intro{
@@ -431,11 +443,11 @@ html{
     position:relative;
     height: 109px;
     text-align: center;
-    font-family: 'Oswald';
+    font-family: 'Comfortaa';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 64px;
-    line-height: 95px;
+    line-height: 71px;
     letter-spacing: 0.06em;
 
     color: #FCFCFC;
@@ -445,11 +457,11 @@ html{
     position:relative;
     text-align: center;
     height: 82px;
-    font-family: 'Oswald';
+    font-family: 'Comfortaa';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 48px;
-    line-height: 71px;
+    line-height: 54px;
     letter-spacing: 0.06em;
 
     color: #FCFCFC;
@@ -466,63 +478,64 @@ html{
 }
 
 [class*='h2-']{
-    font-family: 'Oswald';
+    font-family: 'Comfortaa';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 48px;
-    line-height: 71px;
+    line-height: 54px;
     letter-spacing: 0.06em;
     color: #FCFCFC;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 [class*='h-']{
-    padding-top: 20px;
-    font-family: 'Oswald';
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-family: 'Comfortaa';
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 27px;
     letter-spacing: 0.06em;
     color: #FCFCFC;
 }
 
-.grid{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    grid-column-gap: 3%;
+.flex{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: nowrap;
 }
 
-.grild-mini{
-    display: grid;
-    grid-template-columns: repeat(3, 33.33%);
-    padding-top: 20px;
+.flex-mini{
+    display: flex;
+    justify-content: space-between;
 }
 
-.grid-min-2{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
+.flex-min-2{
+    display: flex;
+    justify-content: space-between;
     padding-top: 40px;
 }
 
 .col-2-3{
-    grid-column: span 2;
-    background: #464756;
-    border: 1px solid #FFFFFF;
+    background: #582C4D;
+    border: 1px solid #FF61D8;
     padding-right: 35px;
     padding-left: 40px;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 30px;
     box-shadow: 0 0 10px 2px #FFFFFF;
+    margin-right: 50px;
 }
 
 .col-1-3{
-    background: #464756;
-    border: 1px solid #FFFFFF;
+    background: #2A4365;
+    border: 1px solid #569CFA;
     padding-right: 35px;
     padding-left: 40px;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 30px;
     box-shadow: 0 0 10px 2px #FFFFFF;
 }
@@ -538,10 +551,10 @@ html{
 /*Анимация*/
 
 .col-1-3:hover{
-    box-shadow: 0 0 10px 2px #82DEAD;
+    box-shadow: 0 0 10px 2px #569CFA;
 }
 .col-2-3:hover{
-    box-shadow: 0 0 10px 2px #82DEAD;
+    box-shadow: 0 0 10px 2px #FF61D8;
 }
 
 .git:hover{
@@ -561,6 +574,24 @@ html{
     padding-top: 80px;
 }
 
+.col_2-3{
+    background: #2F6629;
+    border: 1px solid #96D48F;
+    box-shadow: 0 0 10px 2px #FFFFFF;
+    padding-top: 30px;
+    margin-left: 50px;
+}
+
+.col_1-3{
+    background: #604B2D;
+    border: 1px solid #FFCC81;
+    padding-right: 35px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 10px 2px #FFFFFF;
+}
+
 [class*='h--']{
     padding-top: 50px;
     padding-bottom: 30px;
@@ -577,36 +608,40 @@ html{
     width: 255px;
     height: 28px;
     background: #969696;
-    padding-top: 20px;
 }
 
-[class*='S__']{  /*Настроить индивидуальные размеры и местоположение*/
+[class*='S__']{ 
     width: 112px;
     height: 28px;
     background: #FFFFFF;
 }
 
+.flex_col{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.h2-futer{
+    padding-right: 35px;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    background-color:#2F6629;
+}
+
 /*Анимация*/
-
 [class*='S__']:hover{
-    background: #82DEAD;
+    background: #FFCC81;
 }
 
-
-.futer{
-    text-align: center;
-    position:relative;
-    height: 109px;
-    text-align: center;
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 64px;
-    line-height: 95px;
-    letter-spacing: 0.06em;
-
-    color: #FCFCFC;
+.col_1-3:hover{
+    box-shadow: 0 0 10px 2px #FFCC81;
 }
+.col_2-3:hover{
+    box-shadow: 0 0 10px 2px #96D48F;
+}
+
 
 /*Экран 3 конец*/
 /*Низ*/
